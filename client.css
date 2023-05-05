@@ -1,0 +1,563 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: tahoma;
+}
+body{
+    background-color: white;
+}
+/* =====================CONTAINER====================== */
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    }
+/* =====================CONTAINER====================== */
+/* =======================HEADER======================= */
+header{
+    width: 100%;
+    height: auto;
+    background-color: #c80a0d;
+    background-image: linear-gradient(315deg, #c80a0d 0%, #1b131b 50%, #000bff 100%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.top{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.top p{
+    padding: 5px;
+}
+.login a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+.login a:hover{
+    color: gray;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+.logo{
+    width: 30%;
+    height: auto;
+}
+.logo p{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 20px;
+}
+.seachs{
+    width: 60%;
+    height: auto;
+    /* background-color: white; */
+}
+.seach{
+    width: 450px;
+    height: auto;
+    background-color: white;
+    border-radius: 2px;
+}
+.seach input{
+    width: 400px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    padding-left: 10px;
+}
+.seach input:focus{
+    outline: none;
+}
+.seach button{
+    width: 42px;
+    height: 32px;
+    border: none;
+    background-color: white;
+    border-top-right-radius: 2px;
+    border-end-end-radius: 2px;
+}
+.cart a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+}
+.cart a:hover{
+    color: gray;
+}
+.cart a i{
+    font-size: 35px;
+}
+/* =======================HEADER======================= */
+/* =====================NAV============================ */
+nav{
+    width: 100%;
+    height: auto;
+    background-color: rgb(1, 0, 77);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+nav ul li a:hover{
+    color: gray ;
+}
+/* =====================NAV============================ */
+/* ======================MAIN========================== */
+main{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+/* ======================MAIN========================== */
+/* ====================ASIDE========================= */
+aside{
+    width: 20%;
+    height: auto;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+p.danhmuc{
+    width: 100%;
+    padding: 10px 0px;
+    color: white;
+    background-color: rgb(1, 0, 77);
+    text-align: center;
+    border-radius: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+}
+ul.linhkien{
+    display: flex;
+    flex-direction: column;
+}
+li.boss{
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #02A3D6;
+    color: white;
+}
+aside ul li{
+    list-style: none;
+}
+aside ul li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+aside ul li a:hover{
+    background-color: #021ed6;
+    color: white;
+}
+aside ul li a i{
+    font-size: 10px;
+}
+/* ====================ASIDE========================= */
+/* ==================ARTICLE=========================== */
+article{
+    width: 60%;
+    height: auto;
+    /* background-color: red; */
+}
+p.propose{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: rgb(192, 192, 192);
+    text-transform: uppercase;
+    text-indent: 10px;
+}
+ul.list_product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+ul.list_product li{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 23%;
+    padding: 20px 15px;
+    border: 1px solid gray;
+    text-align: center;
+    list-style: none;
+    border-radius: 2px;
+    box-shadow: 0px 1px 5px 1px gray;
+}
+ul.list_product li div{
+    width: 100%;
+    height: 100px;
+}
+ul.list_product li div img{
+    width: 100%;
+    height: 100%;
+}
+ul.list_product li a{
+    padding: 3px 0px;
+    color: black;
+    text-decoration: none;
+}
+ul.list_product li a.names{
+    font-size: 12px;
+}
+ul.list_product li a.price{
+    color: red;
+    padding-top:10px;
+}
+ul.list_product li button{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    background-color: brown;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+ul.list_product li button:hover{
+    opacity: 0.9;
+}
+ul.list_product li button:active{
+    opacity: 0.7;
+}
+/* ==================ARTICLE=========================== */
+/* ===================SECTION=========================== */
+section{
+    width: 20%;
+    height: auto;
+    border-radius: 3px;
+    border: 1px solid gray;
+    /* background-color: rgb(247, 255, 17); */
+}
+form{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+form label{
+    font-size: 13px;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-indent: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 3px 0px ;
+}
+form input:focus{
+    border: none;
+    outline: 2px solid rgb(1, 0, 77);
+    box-shadow: 0px 1px 12px 1px rgb(1, 0, 77);
+    background-color: white;
+    color: black;
+}
+form input:focus::placeholder{
+    color: black;
+}
+form button{
+    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+    background-color: rgb(1, 0, 77);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+form button:hover{
+    opacity: 0.9;
+}
+form button:active{
+    opacity: 0.7;
+}
+form a{
+    display: block;
+    color: rgb(1, 0, 77);
+    font-size: 12px;
+    padding: 5px 0px;
+}
+.mycart{
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+.mycart h3{
+    padding: 0px 0px 5px 0px;
+}
+.mycart button{
+    margin: 20px 0px 0px 0px;
+    width: 50%;
+    height: 25px;
+    background-color: #021ed6;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.mycart button:hover{
+    opacity: 0.9;
+}
+.mycart button:active{
+    background-color: rgb(1, 0, 77);
+}
+/* ===================SECTION=========================== */
+/* =====================FOOTER========================== */
+footer{
+    width: 100%;
+    height: auto;
+    color: white;
+    text-align: center;
+    background-color: rgb(1, 0, 77);
+    padding: 10px;
+}
+/* =====================FOOTER========================== */
+/* ================REPONSIVE================== */
+@media  screen and (max-width: 250px){
+    .cart{
+        display: none;
+    }
+    ul.list_product {
+        justify-content: center;
+    }
+    ul.list_product li{
+        flex-basis: 100%;
+    }
+}
+@media  screen and (max-width: 320px) {
+    .top div{
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+    }
+    .top div p{
+        font-size: 12px;
+    }
+    .top .login a{
+        font-size: 12px;
+    }
+    .seach{
+        display: none;
+    }
+    .cart{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    main{
+        flex-direction: column;
+    }
+    aside{
+        width: 100%;
+    }
+    article{
+        width: 100%;
+    }
+    section{
+        display: none;
+    }
+    ul.list_product li{
+        flex-basis: 48%;
+    }
+    footer p{
+        font-size: 10px;
+    }
+}
+/* ================= */
+@media  screen and (min-width: 320px) and  (max-width: 375px){
+    .top div{
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+    }
+    .top div p{
+        font-size: 12px;
+    }
+    .top .login a{
+        font-size: 12px;
+    }
+    .seach{
+        display: none;
+    }
+    .cart{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    main{
+        flex-direction: column;
+    }
+    aside{
+        width: 100%;
+    }
+    article{
+        width: 100%;
+    }
+    section{
+        display: none;
+    }
+    ul.list_product li{
+        flex-basis: 48%;
+    }
+    footer p{
+        font-size: 10px;
+    }
+}
+/* =================== */
+@media  screen and (min-width: 375px) and  (max-width: 414px){
+    .top div{
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+    }
+    .top div p{
+        font-size: 12px;
+    }
+    .top .login a{
+        font-size: 12px;
+    }
+    .seach{
+        display: none;
+    }
+    .cart{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    main{
+        flex-direction: column;
+    }
+    aside{
+        width: 100%;
+    }
+    article{
+        width: 100%;
+    }
+    section{
+        display: none;
+    }
+    ul.list_product li{
+        flex-basis: 48%;
+    }
+    footer p{
+        font-size: 10px;
+    }
+}
+/* ================ */
+@media screen and (min-width: 414px) and (max-width: 670px){
+    nav{
+        display: none;
+    }
+    .seach{
+        display: none;
+    }
+    section{
+        display: none;
+    }
+    aside{
+        width: 50%;
+    }
+    article{
+        width: 50%;
+    }
+    ul.list_product{
+        justify-content: center;
+    }
+    ul.list_product li{
+        flex-basis: 100%;
+    }
+}
+/* ================ */
+@media screen and (min-width: 670px) and (max-width: 768px) {
+    nav{
+        display: none;
+    }
+    .seach{
+        display: none;
+    }
+    section{
+        display: none;
+    }
+    aside{
+        width: 30%;
+    }
+    article{
+        width: 70%;
+    }
+    ul.list_product li{
+        flex-basis: 48%;
+    }
+}
+/* ================ */
+@media  screen and (min-width: 768px) and (max-width: 1024px){
+    .top div{
+        padding: 5px;
+    }
+    nav{
+        display: none;
+    }
+    .seach{
+        margin: 0px 30px;
+    }
+    .cart{
+        display: none;
+    }
+    .logo{
+        width: 50%;
+    }
+    .seachs{
+        width: 50%;
+    }
+    .seach{
+        width: 350px;
+    }
+    .seach input{
+        width: 300px;
+    }
+    aside{
+        width: 30%;
+    }
+    article{
+        width: 70%;
+    }
+    ul.list_product li{
+        flex-basis: 32%;
+    }
+    section{
+        display: none;
+    }
+}
+
+/* ================REPONSIVE================== */
